@@ -5,7 +5,7 @@ import protect from '../milldeware/AuthUser.js';
 
 router.post('/signup', signup);
 router.get('/post', protect, getpost);
-router.get('fake',fake)
+router.get('/fake',fake)
 // router.post('/login', login);
 
 
