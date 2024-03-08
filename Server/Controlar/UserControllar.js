@@ -73,7 +73,10 @@ const getpost = async (req, res) => {
     }
 }
 
+const fake = (req, res) => {
+    res.send("hello world!");
+}
 
 
-export { signup, getpost };
+export { signup, getpost ,fake };
 

@@ -23,7 +23,7 @@ const connectToDatabase = async () => {
 
 async function makeApiCall() {
     try {
-        const response = await fetch("https://e-commerce-2024.onrender.com/allproducts");
+        const response = await fetch("https://zero8-03-2024-advisoropedia-assignment.onrender.com/fake");
         if (response.ok) {
             console.log("API call successful");
         } else {
@@ -39,7 +39,7 @@ setInterval(makeApiCall, interval);
 
 app.listen(port, async (err) => {
     await connectToDatabase();
-    // await makeApiCall();
+    await makeApiCall();
 
 
     if (!err) {
